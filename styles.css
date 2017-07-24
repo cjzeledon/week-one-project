@@ -72,10 +72,18 @@ nav ul li a:active{
   color: #968772;}
 
 .content{
-  margin-top:100px;
+  margin-top: 100px;
   width: 1000px;
   margin-left: auto;
   margin-right: auto;}
+
+.content_about{
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;}
+
+.content_aftergrow{
+  margin-top: 30px;}
 
 #content_menu{
   background-color: red;
@@ -109,16 +117,78 @@ h2{
   font-weight:lighter;
   margin-top: 0;}
 
+h3{
+  font-size: 20px;
+  font-weight:lighter;
+  margin-top: 0;
+  text-align: left;}
+
 footer{
   background-color: rgb(43,47,38);
   height: 35px;
-  position: absolute;
-  bottom:0;
-  left:0;
-  right:0;
   color: #968772;
   text-align: left;
   padding-top: 20px;
   padding-left: 20px}
 
-  
+#birdhouse{
+  width: 101px;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+  padding-top: 18px;}
+
+p{
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  line-height: 1.8em;}
+
+quote{
+  display: inline-block;
+  border-left: 1px solid rgb(135, 116, 91);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-style: italic;
+  line-height: 1.8em;
+  opacity: .5;}
+
+#roomtogrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  background-color: red;
+  background-image: image("images/background-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;}
+
+aside{
+  width: 113px;
+  font-size: 13px;
+  float: right;
+  margin-top: 30px;
+  margin-left: 10px;}
+
+#asideimg{
+  width: 100%;
+  height: auto;
+  margin-right: 20px;
+  padding-top: 18px;
+  padding-bottom: 8px;}
+
+table{
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  font-family: 'Merriweather', serif;
+  font-size: 13px;}
+
+th, td{
+  border: 1px solid rgb(59, 61, 54);
+  padding: 10px;}
+
+tr:nth-child(even){
+  background-color: rgb(242, 234, 221);
+}
