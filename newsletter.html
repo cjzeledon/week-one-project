@@ -2,6 +2,7 @@
 <head>
   <title>Bent Creek Ceramics - Newsletter</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/bent-creek-logo-coral.png">
 </head>
 <body id="newsletter">
 
@@ -23,16 +24,34 @@
       <p>Stay up to date with events, activities, news and specials.</p>
 
       <form action="http://" method="post">
-        <input type="text" name="username" placeholder="Name" class="formbox"><br />
-        <input type="email" name="email" placeholder="Email" class="formbox"><br />
-        <input type="button" name="Submit" value="Submit" id="submit">
+        <input type="text" id="nameInput" name="username" placeholder="Name" class="formbox" required><br />
+        <input type="email" id="emailInput" name="email" placeholder="Email" class="formbox" required><br />
+        <input type="button" id="signupButton" name="Submit" value="Submit">
       </form>
-
-
-   </section>
+    </section>
 </div>
 
     <footer>Copyright 2017, Bent Creek Ceramics</footer>
 
 </body>
+
+<!-- Getting some bonus points here!  -->
+
+<script type="text/javascript">
+  var nameInput = document.getElementById('nameInput');
+  var emailInput = document.getElementById('emailInput');
+  var signupButton = document.getElementById('signupButton');
+  signupButton.addEventListener('click', function(e) {
+    var nameVal = nameInput.value;
+    var emailVal = emailInput.value;
+    if (nameVal && emailVal) {
+      alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+      nameInput.value = "";
+      emailInput.value = "";
+    } else {
+      alert('We would love for you to sign up, please provide both your name and email address.');
+    }
+  });
+</script>
+
 </html>

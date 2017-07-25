@@ -66,13 +66,13 @@ nav ul li a{
   font-family: 'Roboto', serif;
   color: #968772;}
 
-nav ul li a:visited{
+nav ul li a:visited, a:visited{
   color: #2B2F26;}
 
-nav ul li a:hover{
+nav ul li a:hover, a:hover{
   color: #CD5D67;}
 
-nav ul li a:active{
+nav ul li a:active, a:active{
   color: #968772;}
 
 .content{
@@ -274,7 +274,6 @@ tr:nth-child(even){
 
 #newsletter{
   background-image: url("images/background-2.jpg");
-  background-size: fill;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;}
@@ -293,7 +292,7 @@ form{
   padding-bottom: 2px;
   width: 490px;}
 
-#submit{
+#signupButton{
   background-color: #968772;
   color: #F2F1E8;
   border: 1px solid #968772;
