@@ -27,7 +27,11 @@ font-family: 'Roboto', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i');
 
 body{
-  background-color: #F2F1E8;}
+  background-color: #F2F1E8;
+  min-height: 600px;
+  position: relative;
+  margin: 0;
+  padding-bottom: 105px;}
 
 header{
   background-color: #FFF;
@@ -85,23 +89,69 @@ nav ul li a:active{
 .content_aftergrow{
   margin-top: 30px;}
 
-#content_menu{
-  background-color: red;
+.content_menu1 {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  flex-flow: row;}
+  margin-bottom: 0;
+  height: 250px;
+  width: 100%;}
 
-#content_menu figure{
-  border: 2px solid white;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  display: block;}
+.content_menu2 {
+  display: flex;
+  margin-bottom: 0;
+  height: 200px;
+  width: 100%;}
 
-#content_menu img{
-  background-color: white;
-  max-width: 30px;}
+#product1 {
+  background-image: url(images/product-1.jpg);
+  background-size:cover;
+  margin-right: 10px;
+  width: 68%;}
+
+
+#product2{
+  background-image: url(images/product-2.jpg);
+  background-size: cover;
+  padding: 0;
+  margin-right: 10px;
+  width: 15%;}
+
+#product3{
+  background-image: url(images/product-3.jpg);
+  background-size: cover;
+  width: 15%;}
+
+/*2nd rows that contain four photos*/
+
+#product4{
+  background-image: url(images/product-4.jpg);
+  background-size: cover;
+  padding: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 20%;}
+
+#product5{
+  background-image: url(images/product-5.jpg);
+  background-size: cover;
+  padding: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 20%;}
+
+#product6{
+  background-image: url(images/product-6.jpg);
+  background-size: cover;
+  padding: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 40%;}
+
+#product7{
+  background-image: url(images/product-7.jpg);
+  background-size: cover;
+  padding: 0;
+  margin-top: 10px;
+  width: 20%;}
 
 h1, h2, h3{
   font-family: 'Merriweather', serif;
@@ -129,7 +179,12 @@ footer{
   color: #968772;
   text-align: left;
   padding-top: 20px;
-  padding-left: 20px}
+  padding-left: 20px;
+  /* Set position based on the CLOSEST POSITIONED PARENT */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;}
 
 #birdhouse{
   width: 101px;
@@ -142,6 +197,20 @@ p{
   font-family: 'Merriweather', serif;
   font-size: 14px;
   line-height: 1.8em;}
+
+.content_menu1 p, .content_menu2 p{
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  background-color: rgb(43,47,38);
+  font-size: .8em;}
+
+.content_menu2 p{
+  margin-top: 136px;}
+
+.content_menu1 p{
+  margin-top: 188px;
+}
 
 quote{
   display: inline-block;
@@ -158,12 +227,13 @@ quote{
   justify-content: center;
   align-items: center;
   height: 320px;
-  background-color: red;
-  background-image: image("images/background-3.jpg");
+  background-image: url(images/background-3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;}
+  background-size: cover;
+  font-size: 5em;
+  color: white;}
 
 aside{
   width: 113px;
@@ -190,5 +260,45 @@ th, td{
   padding: 10px;}
 
 tr:nth-child(even){
-  background-color: rgb(242, 234, 221);
-}
+  background-color: rgb(242, 234, 221);}
+
+#signup{
+  background-color: white;
+  width: 540px;
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px;}
+
+#newsletter{
+  background-image: url("images/background-2.jpg");
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;}
+
+form{
+  margin: 20px;}
+
+.formbox{
+  color: #2B2F26;
+  font-size: 13px;
+  border-bottom: 1px solid #968772;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  padding-top: 15px;
+  padding-bottom: 2px;
+  width: 490px;}
+
+#submit{
+  background-color: #968772;
+  color: #F2F1E8;
+  border: 1px solid #968772;
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+  width: 90px;
+  margin-top: 15px;}
